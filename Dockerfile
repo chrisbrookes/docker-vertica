@@ -22,7 +22,7 @@ RUN groupadd -r verticadba
 RUN useradd -r -m -g verticadba dbadmin
 
 #ADD vertica-7.0.2-1.x86_64.RHEL5.rpm /rpms/vertica-7.0.2-1.x86_64.RHEL5.rpm
-ADD vertica*.x86_64.RHEL5.rpm /rpms/
+ADD vertica*.x86_64.RHEL6.rpm /rpms/
 
 RUN yum install -y /rpms/*.rpm
 
